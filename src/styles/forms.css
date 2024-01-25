@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+
+    background-color: rgb(143, 155, 184);
+    font-size: 18px;
+    padding: 10px;
+
+    border-radius: 8px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto 50px auto 30px;
+    padding: 5px;
+
+}
+
+.form label{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.form input, .form textarea{
+    width: 100%;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.form textarea{
+    height: 300px;
+}
+
+#div-nome, #div-telefone, #div-mensagem {
+    margin-bottom: 15px;
+}
+
+#div-nome span, #div-telefone span, #div-mensagem span{
+    color: red;
+
+}
+
+#span__nome, #span__telefone, #span__mensagem{
+    visibility: hidden;
+    font-size: 12px;
+
+}
+
+#botao {
+    width: 100%;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(164, 100, 21);
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#botao:hover{
+    background-color: rgb(21, 135, 164);
+    color: rgb(255, 255, 255);
+}

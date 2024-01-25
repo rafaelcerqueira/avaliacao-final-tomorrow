@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvador Turismo</title>
+
+    <link rel="stylesheet" href="src/styles/forms.css">
+    <link rel="stylesheet" href="src/styles/mainPgTres.css">
+    <script src="src/script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="cabecalho">
+        <div class="paginas">
+            <a href="/index.html">Início</a>
+            <a href="paginaDois.html">Riquezas Naturais</a>
+          </div>
+    </div>
+    
+    <!-- Main-->
+    <main>
+        <h1 id="titulo">Visitas Culturais Obrigatórias de Salvador</h1>
+
+        <h3 class="titulos">Museu Afro-Brasileiro</h3>
+
+        <div class="a">
+            <img src="src/assets/img/museu-afro-brasileiro.jpg" alt="museu-afro-brasileiro" class="img">
+            <p>Para começar nossa jornada pelas riquezas culturais de Salvador, o Museu da Cultura Afro-Brasileira é o
+                melhor ponto de partida. Localizado no centro de Salvador, o museu é um tesouro cultural que destaca a
+                influência fundamental da herança afrodescendente na formação da identidade local. Com exposições
+                cativantes e identitárias os
+                visitantes se sentem acolhidos e representados ao enxergar as raízes brasileiras em sua frente.
+            </p>
+            <p>Ao visitar o Museu da Cultura Afro-Brasileira, convidamos você a mergulhar nas raízes que sustentam
+                a diversidade e a riqueza da sociedade brasileira, celebrando a vitalidade e contribuição única da
+                cultura
+                afrodescendente.
+                <a href="#form">Caso tenha se interessado clique aqui e entre em contato com a gente </a>
+            </p>
+        </div>
+
+     <h3 class="titulos">Museu de Arte Moderna da Bahia</h3>
+        <div class="b">
+            <img src="src/assets/img/museu-arte-moderna-da-bahia.jpg" alt="museu-de-arte-moderna-da-bahia" class="img">
+            <p>Dando continuidade ao nosso tour pelos museus de Salvador, vamos agora para o Museu de   Arte da Bahia.
+                Localizado também no centro da cidade. Suas galerias, apresentam obras vibrantes
+                e esculturas únicas, os visitantes se sentem imersos em toda riqueza diante dos seus olhos.
+            </p>
+            
+            <p>Diferente do museu da cultura afro-brasileiro, o museu de arte moderna da Bahia possui exposições
+                rotativas destacando tanto artistas consagrados quanto talentos emergentes,
+                proporcionando uma experiência dinâmica e sempre surpreendente.
+                <a href="#form">Caso tenha se interessado clique aqui e entre em contato com a gente </a>
+            </p>
+
+        </div>
+
+        <h3 class="titulos">Museu de Arte Sacra</h3>
+        <div class="c">
+            <img src="src/assets/img/Museu_de_Arte_Sacra.jpg" alt="museu-de-arte-sacra-da-bahia" class="img">
+            <p>Continuando nossa jornada por Salvador, agora exploramos o Museu de Arte Sacra da Bahia. Este local
+                singular é um ponto de riqueza espiritual incomparável do Brasil. A exposição de esculturas sacras e
+                quadros
+                faz você se perguntar como não havia ido ainda para esse local. <br>
+                </p>
+                <p>O museu destaca a fusão de tradições católicas e afro-brasileiras proporcionando uma experiência única
+                para os seus visitantes.
+                Além disso, o local promove eventos constantes para os seus visitantes proporcionando um local de reflexão
+                e contemplação incomparável.
+                <a href="#form">Caso tenha se interessado clique aqui e entre em contato com a gente </a>
+            </p>
+        </div>
+
+        <h3 class="titulos">Casa de Jorge Amado</h3>
+        <div class="d">
+            <img src="src/assets/img/casa-de-jorge.jpg" alt="casa-de-jorge-amador" class="img">
+            <p>Para finalizar nossa apresentação de Salvador, não podemos deixar de mencionar a Casa de Jorge Amado.
+                Localizada no Rio Vermelho, este espaço é mais do que uma residência histórica; é o lar que preserva a
+                memória e a inspiração do renomado escritor brasileiro, Jorge Amado. A visitação pela sua casa
+                é composta por todas suas obras literárias, os visitantes têm a oportunidade de
+                mergulhar no universo literário do escritor. E conseguir presenciar todos os seus pensamentos e como
+                funcionava seu ritual
+                de criatividade e genialidade.</p>
+             <p>Bom assim finalizamos nossa visita por uma das parte mais belas de Salvador, infelizmente não é possível
+                falar sobre tudo,
+                mas caso tenha se interessado não deixe de entrar em contato conosco para que nós o auxiliemos. Basta
+                preencher o formulário
+                ao final da página.
+                <a href="#form">Caso tenha se interessado clique aqui e entre em contato com a gente </a>
+            </p>
+        </div>
+
+        <div class="container-form">
+
+            <h2 id="titulo-form">Entre em contato conosco</h2>
+            <form class="form" id="form">
+                <div id="div-nome">
+                    <label for="nome">Nome: <span class="span-asterisco">*</span></label>
+                    <input type="text" name="nome" id="input-nome" required placeholder="Nome" onblur="validarNome()">
+                    <span id="span__nome">Campo obrigatório</span>
+                </div>
+    
+                <div id="div-telefone">
+                    <label for="telefone">Telefone: <span class="span-asterisco">*</span></label>
+                    <input type="text" name="telefone" id="input-telefone" required maxlength="11" placeholder="Somente números" onblur="validarTelefone()">
+                    <span id="span__telefone">Campo obrigatório</span>
+                </div>
+    
+                <div id="div-mensagem">
+                    <label for="mensagem" id="label-mensagem">Mensagem: <span class="span-asterisco">*</span></label>
+                    <textarea name="mensagem" id="input-mensagem" cols="30" rows="10" required style="resize: none" maxlength="500" onblur="validarMensagem()"></textarea>
+                    <span id="span__mensagem">Campo obrigatório</span>
+                </div>
+    
+                <div id="div-botao">
+                    <button type="submit" id="botao" onclick="return confirmarEnvio()">Enviar</button>
+            </form>
+        </div>
+
+    </main> 
+</body>
+</html>
