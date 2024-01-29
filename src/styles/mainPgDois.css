@@ -11,13 +11,33 @@
 
 body {
     background-color: #e5b10a;
-    max-width: 90%;
     margin: auto;
     font-family: 'Roboto', sans-serif;
 }
 
+main {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direct30ion: column;
+    font-size: 20px;
+    font-weight:bolder;
+    text-align:center;
+    padding:10px;
+    width: 100%;
+    margin-left:-20px;
+    border-top: 5px solid brown;
+    background-image:url("https://t4.ftcdn.net/jpg/05/92/45/09/360_F_592450919_fEToilU6lsBxXDAOsmJIwBMCjpp5U2Mk.jpg");
+    opacity:0.9;
+}
+
 .container-pg-dois {
-    margin-bottom: 30px;
+    margin-bottom: 200px;
 }
 
 .container-pg-dois a {
@@ -180,4 +200,28 @@ body {
 
 .title-3 {
     margin-top: 50px;
+}
+
+.rodape #endereco {
+    margin: auto;
+}
+
+
+#endereco {
+    background-color: #e90a4c;
+    
+}
+
+.rodape a {
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+.rodape iframe {
+    margin-top: 20px;
 }
