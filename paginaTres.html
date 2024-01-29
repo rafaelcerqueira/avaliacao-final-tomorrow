@@ -98,27 +98,60 @@
             <form class="form" id="form">
                 <div id="div-nome">
                     <label for="nome">Nome: <span class="span-asterisco">*</span></label>
-                    <input type="text" name="nome" id="input-nome" required placeholder="Nome" onblur="validarNome()">
+                    <input 
+                        type="text" name="nome" id="input-nome" required placeholder="Nome" onblur="validarNome()" onkeydown="removerBorda(this)"
+                    />
                     <span id="span__nome">Campo obrigatório</span>
+                </div>
+
+                <div id="div-email">
+                    <label for="email">E-mail: <span class="span-asterisco">*</span></label>
+                    <input 
+                        type="email" name="email" id="input-email" required placeholder="exemplo@email.com" onblur="validarEmail() " onkeydown="removerBorda(this)"
+                    />
+                    <span id="span__email">Campo obrigatório</span>
                 </div>
     
                 <div id="div-telefone">
-                    <label for="telefone">Telefone: <span class="span-asterisco">*</span></label>
-                    <input type="text" name="telefone" id="input-telefone" required maxlength="11" placeholder="Somente números" onblur="validarTelefone()">
+                    <label for="telefone">Telefone: <!-- <span class="span-asterisco">*</span></label> -->
+                    <input 
+                        type="tel" name="telefone" id="input-telefone" placeholder="(00) 00000-0000" oninput="formatarTelefone(this)" onblur="validarTelefone()"
+                        maxlength="15" pattern="[0-9]{15}"
+                    />
                     <span id="span__telefone">Campo obrigatório</span>
                 </div>
-    
+
                 <div id="div-mensagem">
-                    <label for="mensagem" id="label-mensagem">Mensagem: <span class="span-asterisco">*</span></label>
-                    <textarea name="mensagem" id="input-mensagem" cols="30" rows="10" required style="resize: none" maxlength="500" onblur="validarMensagem()"></textarea>
+                    <label 
+                    for="mensagem" id="label-mensagem">Mensagem: <span class="span-asterisco">*</span></label>
+                    <textarea 
+                        name="mensagem" id="input-mensagem" cols="30" rows="10" required style="resize: none" maxlength="500" onblur="validarMensagem()" 
+                    /></textarea>
                     <span id="span__mensagem">Campo obrigatório</span>
                 </div>
     
                 <div id="div-botao">
                     <button type="submit" id="botao" onclick="return confirmarEnvio()">Enviar</button>
+                    <button type="submit" id="botao" onclick="limparFormulario()">Limpar</button>
+                </div>
             </form>
         </div>
 
-    </main> 
+        <footer>
+            <div class="rodape">
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="src/assets/img/facebook.png" alt="facebook" class="img-redes-sociais">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="src/assets/img/instagram.png" alt="instagram" class="img-redes-sociais">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="src/assets/img/twitter.png" alt="twitter" class="img-redes-sociais">
+                    </a>
+                </div>
+        </footer>
+    </main>
+    
 </body>
 </html>

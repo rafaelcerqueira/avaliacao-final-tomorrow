@@ -48,16 +48,16 @@ body {
     height: 300px;
 }
 
-#div-nome, #div-telefone, #div-mensagem {
+#div-nome, #div-email, #div-telefone, #div-mensagem {
     margin-bottom: 15px;
 }
 
-#div-nome span, #div-telefone span, #div-mensagem span{
+#div-nome span, #div-email span, #div-telefone span, #div-mensagem span{
     color: red;
 
 }
 
-#span__nome, #span__telefone, #span__mensagem{
+#span__nome, #span__email, #span__telefone, #span__mensagem{
     visibility: hidden;
     font-size: 12px;
 
